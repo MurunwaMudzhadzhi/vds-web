@@ -250,7 +250,7 @@ export default function Home() {
                   <span className="text-primary">Shape your future.</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
-                  Vhumatshelo Skills Development deliver practical, hands-on agricultural training designed to empower individuals with the skills, knowledge and confidence to build self-sufficient, sustainable livelihoods.
+                  Vhumatshelo Skills Development delivers practical, hands-on agricultural training designed to empower individuals with the skills, knowledge and confidence to build self-sufficient, sustainable livelihoods.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="rounded-full text-base h-14 px-8" onClick={() => scrollTo("programs")}>
