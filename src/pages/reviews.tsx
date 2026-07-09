@@ -21,6 +21,14 @@ const STORAGE_KEY = "vhumatshelo_reviews";
 const GOOGLE_REVIEW_URL =
   "https://www.google.com/maps/search/?api=1&query=Vhumatshelo+Skills+Development+Kameeldrift+Pretoria";
 
+// TODO: Replace these placeholder URLs with Vhumatshelo's real social media page links.
+const SOCIAL_LINKS = {
+  facebook: "https://www.facebook.com/vhumatshelodevelopment",
+  instagram: "https://www.instagram.com/vhumatshelodevelopment",
+  tiktok: "https://www.tiktok.com/@vhumatshelodevelopment",
+  twitter: "https://x.com/vhumatshelodev",
+};
+
 const programOptions = [
   "Computers & Digital",
   "Animal Production",
@@ -367,10 +375,10 @@ export default function Reviews() {
                 hands-on training.
               </p>
               <div className="flex gap-3">
-                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors"><FaFacebook size={18} /></a>
-                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors"><FaInstagram size={18} /></a>
-                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors"><FaTiktok size={18} /></a>
-                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors"><FaXTwitter size={18} /></a>
+                <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors"><FaFacebook size={18} /></a>
+                <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors"><FaInstagram size={18} /></a>
+                <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors"><FaTiktok size={18} /></a>
+                <a href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors"><FaXTwitter size={18} /></a>
               </div>
             </div>
 

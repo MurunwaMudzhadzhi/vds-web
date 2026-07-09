@@ -30,6 +30,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
+// TODO: Replace these placeholder URLs with Vhumatshelo's real social media page links.
+const SOCIAL_LINKS = {
+  facebook: "https://www.facebook.com/vhumatshelodevelopment",
+  instagram: "https://www.instagram.com/vhumatshelodevelopment",
+  tiktok: "https://www.tiktok.com/@vhumatshelodevelopment",
+  twitter: "https://x.com/vhumatshelodev",
+};
+
 const programs = [
   {
     title: "Computers & Digital",
@@ -211,10 +219,10 @@ export default function Home() {
           <button onClick={() => scrollTo("contact")} className="text-2xl font-display font-medium text-left border-b pb-4 text-primary">Contact & Join</button>
           
           <div className="flex gap-4 mt-auto mb-8 justify-center">
-            <a href="#" className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><FaFacebook size={20} /></a>
-            <a href="#" className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><FaInstagram size={20} /></a>
-            <a href="#" className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><FaTiktok size={20} /></a>
-            <a href="#" className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><FaXTwitter size={20} /></a>
+            <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><FaFacebook size={20} /></a>
+            <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><FaInstagram size={20} /></a>
+            <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><FaTiktok size={20} /></a>
+            <a href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><FaXTwitter size={20} /></a>
           </div>
         </div>
       )}
@@ -242,7 +250,7 @@ export default function Home() {
                   <span className="text-primary">Shape your future.</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
-                  Vhumatshelo Skills Development offers practical, hands-on training to empower individuals with the crafts and confidence needed to build self-sufficient lives.
+                  Vhumatshelo Skills Development deliver practical, hands-on agricultural training designed to empower individuals with the skills, knowledge and confidence to build self-sufficient, sustainable livelihoods.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="rounded-full text-base h-14 px-8" onClick={() => scrollTo("programs")}>
@@ -296,12 +304,12 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5 }}
                 >
-                  <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">Rooted in African Community Pride.</h2>
+                  <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">Rooted in African Community Pride, we are a registered agricultural training provider based in Kameeldrift, Pretoria.</h2>
                   <p className="text-lg text-white/70 mb-6 leading-relaxed">
-                    Based in Kameeldrift, Pretoria, we are a registered training provider dedicated to uplifting communities nationwide. We believe that true empowerment comes from self-sufficiency.
+                    Our mission is to uplift rural and semi-urban communities across South Africa by building self-sufficiency through practical farming skills, agribusiness development, and sustainable land practices.
                   </p>
                   <p className="text-lg text-white/70 mb-8 leading-relaxed">
-                    Our center is more than a classroom—it's a vibrant, hopeful space where men and women arrive with ambition and leave with a tangible craft and a plan for their future.
+                    More than a training center, we are a vibrant hub where men and women come with ambition and leave with market ready agricultural skills and a viable farm plan for themselves and their communities.
                   </p>
                   
                   <div className="flex gap-8">
@@ -832,16 +840,16 @@ export default function Home() {
               </p>
               
               <div className="flex gap-3">
-                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors">
+                <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors">
                   <FaFacebook size={18} />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors">
+                <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors">
                   <FaInstagram size={18} />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors">
+                <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors">
                   <FaTiktok size={18} />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors">
+                <a href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/80 hover:bg-primary hover:text-white transition-colors">
                   <FaXTwitter size={18} />
                 </a>
               </div>
