@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://vhumatshelo-skills-development.onrender.com/sitemap.xml
